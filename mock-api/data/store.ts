@@ -1,13 +1,5 @@
 export const store: IStore = {
-	entities: {
-		'xx-aa-bb': {
-			id: 'xx-aa-bb',
-			firstName: 'John',
-			lastName: 'Smitherin',
-			email: 'john@gmail.com',
-			phoneNumber: '+6192099102',
-		},
-	},
+	entities: {},
 };
 
 export const addClient = (client: IClient) => {
