@@ -6,6 +6,7 @@ import * as yup from 'yup';
 import CreateClientBackButton from './BackButton';
 import CreateClientSteps from './Steps';
 import { PatternFormat } from 'react-number-format';
+import { phoneNumberFormat } from '../../constants/strings';
 
 const validationSchema = yup.object({
 	phoneNumber: yup
@@ -14,8 +15,6 @@ const validationSchema = yup.object({
 		.length(10, 'Please enter a valid phone number.'),
 	email: yup.string().email().required("Please enter the client's email."),
 });
-
-export const phoneNumberFormat = '+63 ### ### ####';
 
 const ContactDetailsStep: React.FunctionComponent = () => {
 	const { handleNext, values } = useContext(CreateClientContext);

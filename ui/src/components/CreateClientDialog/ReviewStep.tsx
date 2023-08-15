@@ -3,10 +3,10 @@ import CreateClientSteps from './Steps';
 import CreateClientBackButton from './BackButton';
 import { useCallback, useContext } from 'react';
 import { CreateClientContext } from '.';
-import { phoneNumberFormat } from './ContactDetailsStep';
 import { patternFormatter } from 'react-number-format';
 import { createClient } from '../../services/api';
 import { queryClient } from '../../App';
+import { phoneNumberFormat } from '../../constants/strings';
 
 const ReviewStep: React.FunctionComponent = () => {
 	const { values, status, setStatus } = useContext(CreateClientContext);

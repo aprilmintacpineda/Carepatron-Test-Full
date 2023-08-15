@@ -1,6 +1,6 @@
 import { TableCell, TableRow } from '@mui/material';
 import { patternFormatter } from 'react-number-format';
-import { phoneNumberFormat } from '../../components/CreateClientDialog/ContactDetailsStep';
+import { phoneNumberFormat } from '../../constants/strings';
 
 export interface IProps {
 	client: IClient;

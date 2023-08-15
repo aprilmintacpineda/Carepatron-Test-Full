@@ -1,7 +1,6 @@
-import { memo, useEffect } from 'react';
+import { memo } from 'react';
 import {
 	Alert,
-	Button,
 	CircularProgress,
 	IconButton,
 	InputAdornment,
