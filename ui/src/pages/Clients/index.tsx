@@ -1,4 +1,4 @@
-import { memo, useMemo, useState } from 'react';
+import { memo, useState } from 'react';
 import {
 	Alert,
 	Box,
@@ -102,8 +102,8 @@ function Clients() {
 				}}
 			>
 				<TextField
-					sx={{ background: '#fff' }}
-					placeholder='Name or email...'
+					sx={{ background: '#fff', width: 380 }}
+					placeholder='Filter clients using name, email or phone'
 					InputProps={{
 						endAdornment: (
 							<InputAdornment position='end'>
